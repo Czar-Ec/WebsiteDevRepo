@@ -30,4 +30,20 @@
 
 .toolbar-spacer {
     flex: 1 1 auto;
-  }
+}
+
+.header-cv-button {
+    top: -1px;
+}
+
+@media screen and (min-width: 1000px) {
+    .cv-text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {   
+    .icon-text {
+        display: none;
+    }
+}

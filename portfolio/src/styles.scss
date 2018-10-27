@@ -8,6 +8,54 @@
     src: url(assets/fonts/plateia.ttf) format('woff')
 }
 
+h1 {
+    font-size: 225%;
+    color: #aaaaaa;
+    font-family: Plateia;
+}
+  
+h2 {
+    font-size: 175%;
+    color: #aaaaaa;
+    font-family: Plateia;
+    font-size: 140%;
+    text-align: center;
+}
+
+h3 {
+    font-size: 140%;
+    color: #aaaaaa;
+    font-family: Plateia;
+    font-size: 100%;
+    text-align: center;
+}
+
+p, tr {
+    font-size: 100%;
+    color: #aaaaaa;
+    font-family: 'Share Tech';
+}
+
+a {
+    text-decoration: none;
+    color: rgb(175, 0, 0)
+}
+
+.h7 {
+    font-size: 120%;
+    text-align: center;
+}
+
+table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sortable {
+    text-align: center;
+}
+
 body {
     background-color: rgb(20, 20, 20);
 }

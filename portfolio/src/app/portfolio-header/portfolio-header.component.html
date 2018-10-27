@@ -13,16 +13,17 @@
       <div class="toolbar-external-links">
           <button mat-flat-button (click)="openLinkedIn()">
             <span class="toolbar-icon"><i class="fab fa-linkedin-in"  style="font-size:20px;"></i></span>
-            LinkedIn
+            <span class="icon-text">LinkedIn</span>
           </button>
 
           <button mat-flat-button (click)="openGithub()">
               <span class="toolbar-icon"><i class="fab fa-github" style="font-size:20px;"></i></span>
-              Github
+              <span class="icon-text">Github</span>
           </button>
 
-          <button mat-raised-button (click)="openCV()" color="accent">
-            View CV
+          <button mat-raised-button (click)="openCV()" color="accent" class="header-cv-button">
+            <span class="cv-text">CV</span>
+            <span class="icon-text">View CV</span>
           </button>
       </div>
     </mat-toolbar-row>
