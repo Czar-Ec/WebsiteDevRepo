@@ -1,5 +1,15 @@
 # Portfolio
 
+This used to be the dev branch of the Czar-Ec.github.io repository.
+This has been moved here into its own repo because that was silly
+and made it harder to deploy changes.
+
+Nodemodules has also been removed because its VERY silly cloning
+20k files of dependencies instead of using NPM install to get
+them.
+
+=========================================================
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
 
 ## Development server
