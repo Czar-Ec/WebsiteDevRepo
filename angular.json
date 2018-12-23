@@ -28,7 +28,7 @@
             ],
             "styles": [
               {
-                "input": "src/assets/themes/blue-theme.scss"
+                "input": "src/assets/themes/czarec-red-theme.scss"
               },
               "src/styles.scss"
             ],
