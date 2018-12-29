@@ -1,6 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-html, body, app-root, .app-frame {
-    overflow: hidden;
-    margin: 0;
-    height: 100%;
+html,
+body,
+app-root,
+.app-frame {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+app-root {
+  flex: 1;
 }
