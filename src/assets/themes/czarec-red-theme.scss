@@ -64,16 +64,18 @@ A400 : #ffffff,
 A700 : #ffffff,
 ));
 
+/*Palette colours*/
 $czarec-red-theme-primary: mat-palette($mat-czarecredprimary);
 $czarec-red-theme-accent: mat-palette($mat-czarecredaccent);
-
 $czarec-red-theme-warn: mat-palette($mat-amber);
 
-$czarec-red-theme-light: mat-light-theme($czarec-red-theme-primary, $czarec-red-theme-accent, $czarec-red-theme-warn);
-$czarec-red-theme-dark: mat-dark-theme($czarec-red-theme-primary, $czarec-red-theme-accent, $czarec-red-theme-warn);
 
+/*Dark theme*/
 .dark-theme {
+  $czarec-red-theme-dark: mat-dark-theme($czarec-red-theme-primary, $czarec-red-theme-accent, $czarec-red-theme-warn);
   @include angular-material-theme($czarec-red-theme-dark);
 }
 
+/*Light theme*/
+$czarec-red-theme-light: mat-light-theme($czarec-red-theme-primary, $czarec-red-theme-accent, $czarec-red-theme-warn);
 @include angular-material-theme($czarec-red-theme-light);
