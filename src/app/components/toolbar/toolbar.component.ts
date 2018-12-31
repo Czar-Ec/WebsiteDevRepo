@@ -14,10 +14,26 @@ export class ToolbarComponent implements OnInit {
   constructor(private router: Router) {
     this.routeLinks = [
       {
-        label: 'test',
+        label: 'Introduction',
         link: '/home',
         index: 0
-      },
+      }, {
+        label: 'Work Experience',
+        link: '/work-exp',
+        index: 1
+      }, {
+        label: 'Education',
+        link: '/edu',
+        index: 2
+      }, {
+        label: 'Extra Skills',
+        link: '/extra',
+        index: 3
+      }, {
+        label: 'Contact',
+        link: 'contact',
+        index: 4
+      }
     ];
   }
 
