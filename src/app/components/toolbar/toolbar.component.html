@@ -1,12 +1,22 @@
-<mat-toolbar color="primary"></mat-toolbar>
-<nav mat-tab-nav-bar mat-stretch-tabs>
-    <a mat-tab-link
-       *ngFor="let link of routeLinks"
-       [routerLink]="link.link"
-       routerLinkActive #rla="routerLinkActive"
-       [routerLinkActiveOptions]="{exact:true}"
-       [active]="rla.isActive"
-       (click)="activeLinkIndex = link.index">
-      {{link.label}}
-    </a>
-  </nav>
+<div class="header">
+  <mat-toolbar color="primary" class="toolbar">
+    <div class="mobileItem">
+      <button mat-icon-button>
+        <mat-icon svgIcon="menu"></mat-icon>
+      </button>
+    </div>
+    <mat-icon svgIcon="logotext" class="logoText"></mat-icon>
+    <span class="toolbar-spacer"></span>
+    <button mat-icon-button>
+      <mat-icon svgIcon="cog"></mat-icon>
+    </button>
+  </mat-toolbar>
+  <div class="desktopItem">
+    <nav mat-tab-nav-bar mat-stretch-tabs>
+      <a mat-tab-link *ngFor="let link of routeLinks" [routerLink]="link.link" routerLinkActive #rla="routerLinkActive"
+        [routerLinkActiveOptions]="{exact:true}" [active]="rla.isActive" (click)="activeLinkIndex = link.index">
+        {{link.label}}
+      </a>
+    </nav>
+  </div>
+</div>

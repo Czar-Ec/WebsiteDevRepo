@@ -16,6 +16,8 @@ import { WorkExpContentComponent } from './components/content/work-exp-content/w
 import { EducationContentComponent } from './components/content/education-content/education-content.component';
 import { ExtraContentComponent } from './components/content/extra-content/extra-content.component';
 import { ContactComponent } from './components/content/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,11 +29,13 @@ import { ContactComponent } from './components/content/contact/contact.component
     WorkExpContentComponent,
     EducationContentComponent,
     ExtraContentComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     AppRoutingModule,
     MaterialModule
   ],

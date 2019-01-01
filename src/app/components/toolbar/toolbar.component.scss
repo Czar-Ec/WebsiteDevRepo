@@ -1,0 +1,24 @@
+.logoText {
+    height: 32px;
+    width: 144px;
+}
+
+.toolbar {
+    display: flex;
+}
+
+.toolbar-spacer {
+    flex: 1 1 auto;
+}
+
+@media screen and (min-width: 1000px) {
+    .mobileItem {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .desktopItem {
+        display: none;
+    }
+}
