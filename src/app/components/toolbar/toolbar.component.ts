@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-toolbar',
@@ -8,7 +9,15 @@ import { Router } from '@angular/router';
 })
 export class ToolbarComponent implements OnInit {
 
+  // dark mode theme is used or not
+  darkTheme = true;
+
+  // emit dark theme toggle
+  @Output() toggleTheme = new EventEmitter<any>();
+
+  // navigation tab routelinks
   routeLinks: any[];
+  // current tab index
   activeLinkIndex = 0;
 
   constructor(private router: Router) {
@@ -44,4 +53,7 @@ export class ToolbarComponent implements OnInit {
     });
   }
 
+  toggleAppTheme() {
+    this.toggleTheme.emit(this.darkTheme);
+  }
 }

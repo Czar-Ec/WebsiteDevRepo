@@ -1,6 +1,6 @@
 <mat-sidenav-container id="container" fullscreen>
   <div class="mat-typography app-frame mat-app-background" [class.dark-theme]="setDarkTheme">
-    <app-toolbar></app-toolbar>
+    <app-toolbar (toggleTheme)="toggleDarkTheme()"></app-toolbar>
     <app-content></app-content>
     <app-footer></app-footer>
   </div>

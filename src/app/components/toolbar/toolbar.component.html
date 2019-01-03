@@ -7,9 +7,17 @@
     </div>
     <mat-icon svgIcon="logotext" class="logoText"></mat-icon>
     <span class="toolbar-spacer"></span>
-    <button mat-icon-button>
+    <button mat-icon-button [matMenuTriggerFor]="settings">
       <mat-icon svgIcon="cog"></mat-icon>
     </button>
+    <mat-menu #settings="matMenu">
+      <mat-slide-toggle
+      color="primary"
+      [checked]="darkTheme"
+      (change)="toggleAppTheme()">
+        Dark Theme
+      </mat-slide-toggle>
+    </mat-menu>
   </mat-toolbar>
   <div class="desktopItem">
     <nav mat-tab-nav-bar mat-stretch-tabs>
