@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatIconRegistry } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
+import { OverlayContainer } from '@angular/cdk/overlay';
 
 @Component({
   selector: 'app-root',
@@ -13,10 +14,15 @@ export class AppComponent {
 
   title = 'CzarEc Portfolio';
 
+  private overlay;
+
   constructor(
     private iconReg: MatIconRegistry,
-    sanitise: DomSanitizer
+    sanitise: DomSanitizer,
+    private overlayContainer: OverlayContainer
   ) {
+    this.overlay = this.overlayContainer.getContainerElement();
+    this.applyTheme();
     this.iconReg.addSvgIcon(
       'cog',
       sanitise.bypassSecurityTrustResourceUrl('assets/img/cog.svg')
@@ -45,5 +51,15 @@ export class AppComponent {
 
   toggleDarkTheme() {
     this.setDarkTheme = !this.setDarkTheme;
+
+    this.applyTheme();
+  }
+
+  applyTheme() {
+    if (this.setDarkTheme) {
+      this.overlay.classList.add('dark-theme');
+    } else {
+      this.overlay.classList.remove('dark-theme');
+    }
   }
 }
