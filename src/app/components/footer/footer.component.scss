@@ -1,5 +1,11 @@
+mat-toolbar {
+  bottom: 0;
+  position: fixed;
+}
+
 .crescentIcon {
-    height: 50px;
-    width: 50px;
-    margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  bottom: 0;
 }
