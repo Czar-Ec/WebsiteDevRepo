@@ -27,7 +27,7 @@ export class ToolbarComponent implements OnInit {
         link: '/home',
         index: 0
       }, {
-        label: 'Work Experience',
+        label: 'Experience',
         link: '/work-exp',
         index: 1
       }, {
