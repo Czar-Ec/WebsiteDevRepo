@@ -21,6 +21,10 @@
   text-align: center;
 }
 
+mat-icon, mat-icon.mat-menu-item {
+  padding: 0 10px;
+}
+
 @media screen and (min-width: 1000px) {
   .mobileItem {
     display: none;

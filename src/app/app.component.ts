@@ -28,8 +28,20 @@ export class AppComponent {
       sanitise.bypassSecurityTrustResourceUrl('assets/img/cog.svg')
     );
     this.iconReg.addSvgIcon(
+      'cv',
+      sanitise.bypassSecurityTrustResourceUrl('assets/img/cv.svg')
+    );
+    this.iconReg.addSvgIcon(
       'crescent',
       sanitise.bypassSecurityTrustResourceUrl('assets/img/crescent.svg')
+    );
+    this.iconReg.addSvgIcon(
+      'extra',
+      sanitise.bypassSecurityTrustResourceUrl('assets/img/extra.svg')
+    );
+    this.iconReg.addSvgIcon(
+      'github',
+      sanitise.bypassSecurityTrustResourceUrl('assets/img/github.svg')
     );
     this.iconReg.addSvgIcon(
       'linkedin',

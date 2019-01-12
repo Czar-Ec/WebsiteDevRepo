@@ -53,7 +53,31 @@ export class ToolbarComponent implements OnInit {
     });
   }
 
+  /**
+   * toggles between dark theme and light theme
+   */
   toggleAppTheme() {
     this.toggleTheme.emit(this.darkTheme);
+  }
+
+  /**
+   * opens the CV in another tab
+   */
+  public openCV() {
+    window.open('assets/docs/CzarEchavezCV.pdf', '_blank');
+  }
+
+  /**
+   * opens my linkedin page in another tab
+   */
+  public openLinkedIn() {
+    window.open('https://www.linkedin.com/in/czarec', '_blank');
+  }
+
+  /**
+   * opens my github page in another tab
+   */
+  public openGithub() {
+    window.open('https://github.com/Czar-Ec/', '_blank');
   }
 }
