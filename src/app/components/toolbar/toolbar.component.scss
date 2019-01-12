@@ -11,14 +11,24 @@
   flex: 1 1 auto;
 }
 
+.navMenuButton.mat-menu-item {
+  text-align: center;
+}
+
 .settingsMenu {
   padding: 5px 5px;
+  margin-top: 50px; 
+}
+
+::ng-deep .mat-slide-toggle-content {
+  padding: 0 10px;
+  text-align: right
 }
 
 .navMenuButton {
+  width: 200%;
   margin: 0 auto;
   padding: 0 50px;
-  text-align: center;
 }
 
 mat-icon, mat-icon.mat-menu-item {
