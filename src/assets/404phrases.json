@@ -1,43 +1,7 @@
 {
   "assets": [{
-      "img": "",
+      "img": "udaman",
       "phrase": "Item not found"
-    },
-    {
-      "img": "",
-      "phrase": "This is not the page you're looking for..."
-    },
-    {
-      "img": "",
-      "phrase": "?????"
-    },
-    {
-      "img": "",
-      "phrase": "Did someone give you the wrong url...?"
-    },
-    {
-      "img": "",
-      "phrase": "Refresh this page to get new random stuff to appear!"
-    },
-    {
-      "img": "",
-      "phrase": "Please try not to web crawl through the site..."
-    },
-    {
-      "img": "",
-      "phrase": "The line must be debugged here! THIS FAR, NO FURTHER!"
-    },
-    {
-      "img": "",
-      "phrase": "I don't feel so good..."
-    },
-    {
-      "img": "",
-      "phrase": "Bruh"
-    },
-    {
-      "img": "",
-      "phrase": "oof"
     }
   ]
 }
