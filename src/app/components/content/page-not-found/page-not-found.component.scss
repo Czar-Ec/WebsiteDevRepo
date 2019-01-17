@@ -9,7 +9,21 @@
 .image {
   display: block;
   padding: 20px;
-  margin: 0 auto;
+}
+
+.udaman {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.pepeText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #00bd00;
 }
 
 @media screen and (min-width: 1000px) {
