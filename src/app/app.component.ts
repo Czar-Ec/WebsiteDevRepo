@@ -59,6 +59,28 @@ export class AppComponent {
       'menu',
       sanitise.bypassSecurityTrustResourceUrl('assets/img/menu.svg')
     );
+
+    this.iconReg.addSvgIcon(
+      'pepe',
+      sanitise.bypassSecurityTrustResourceUrl('assets/img/404/common_rarity_pepe.svg')
+    );
+    this.iconReg.addSvgIcon(
+      'feels',
+      sanitise.bypassSecurityTrustResourceUrl('assets/img/404/feels_bad.svg')
+    );
+    this.iconReg.addSvgIcon(
+      'okay',
+      sanitise.bypassSecurityTrustResourceUrl('assets/img/404/okay.svg')
+    );
+    this.iconReg.addSvgIcon(
+      'rukidding',
+      sanitise.bypassSecurityTrustResourceUrl('assets/img/404/r_u_kidding.svg')
+    );
+    this.iconReg.addSvgIcon(
+      'udaman',
+      sanitise.bypassSecurityTrustResourceUrl('assets/img/404/youre_the_man.svg')
+    );
+
   }
 
   toggleDarkTheme() {
