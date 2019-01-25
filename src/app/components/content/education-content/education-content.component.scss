@@ -1,3 +1,45 @@
 .page {
   height: 100%;
 }
+
+mat-panel-title {
+  justify-content: center !important;
+}
+
+table {
+  width: 100%;
+}
+
+tr.detail-row {
+  height: 0;
+}
+
+tr.element-row:not(.expanded-row):hover {
+  background: #909090;
+}
+
+tr.element-row:not(.expanded-row):active {
+  background: #909090;
+}
+
+.element-row td {
+  border-bottom-width: 0;
+}
+
+.element-details {
+  overflow: hidden;
+  display: flex;
+}
+
+.element-diagram {
+  min-width: 80px;
+  border: 2px solid black;
+  padding: 8px;
+  font-weight: lighter;
+  margin: 8px 0;
+  height: 104px;
+}
+
+.grade-description {
+  padding: 10px;
+}
