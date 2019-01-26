@@ -6,12 +6,18 @@ mat-panel-title {
   justify-content: center !important;
 }
 
+::ng-deep .mat-expansion-panel-body {
+  padding: 0 8px 16px !important;
+}
+
 table {
+  margin: 0 auto;
   width: 100%;
 }
 
 tr.detail-row {
   height: 0;
+  width: 100%;
 }
 
 tr.element-row:not(.expanded-row):hover {
@@ -29,12 +35,15 @@ tr.element-row:not(.expanded-row):active {
 .element-details {
   overflow: hidden;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  padding: 1px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .grade-display {
   display: flex;
-  align-items: center;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -56,18 +65,30 @@ tr.element-row:not(.expanded-row):active {
 }
 
 .grade-description {
-  padding: 2px;
 }
 
 // mobile
 @media screen and (max-width: 1000px) {
+  ::ng-deep .mat-expansion-panel-body {
+    padding: 0 !important;
+  }
+
+  .element-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .grade-display {
     display: flex;
     align-items: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-width: 10vw;
+    min-width: 70%;
     border: 2px solid #660000;
     font-weight: lighter;
     margin: 8px 12px 8px 0;
@@ -82,9 +103,5 @@ tr.element-row:not(.expanded-row):active {
   
   .grade-percentage {
     font-size: 100%;
-  }
-  
-  .grade-description {
-    padding: 2px;
   }
 }
