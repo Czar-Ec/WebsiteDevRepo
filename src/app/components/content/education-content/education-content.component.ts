@@ -46,9 +46,13 @@ const qualifications: Qualification[] = [
   {
     qualType: QualType.thirdyr,
     subject: 'Advanced Computing',
-    description: 'test shittest shittest shittest shittest shittest shittest shittest shittest shittest shittest shit',
+    description: 'Module involves the study of parallel and distributed computing, '
+    + ' as well as the concept of MapReduce using Hadoop and CUDA as case studies',
     grade: 'B',
-    percentage: 67
+    percentage: 67,
+    project_title: 'MapReduce',
+    project_link: 'https://github.com/Czar-Ec/MapReduce',
+    project_description: 'An attempt at reproducing Hadoop\'s MapReduce functionality'
   },
   {
     qualType: QualType.thirdyr,

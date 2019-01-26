@@ -29,7 +29,12 @@
               </div>
               <div>
                 <p class="description">{{element.description}}</p>
-              </div>
+              <div *ngIf="element.project_link && element.project_description && element.project_title">
+                <h5>{{element.project_title}}</h5>
+                <a [href]="element.project_link" target="_blank">{{element.project_link}}</a>
+                <p>{{element.project_description}}</p>
+              </div></div>
+              
 
             </div>
           </td>
