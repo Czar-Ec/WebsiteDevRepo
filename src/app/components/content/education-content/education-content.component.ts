@@ -46,7 +46,7 @@ const qualifications: Qualification[] = [
   {
     qualType: QualType.thirdyr,
     subject: 'Advanced Computing',
-    description: '',
+    description: 'test shittest shittest shittest shittest shittest shittest shittest shittest shittest shittest shit',
     grade: 'B',
     percentage: 67
   },
@@ -237,8 +237,8 @@ const qualifications: Qualification[] = [
   {
     qualType: QualType.gcse,
     subject: 'ICT',
-    description: '',
-    grade: 'Distinction'
+    description: 'Note: Grade is Distinction.',
+    grade: 'Dist'
   },
   {
     qualType: QualType.gcse,
@@ -303,7 +303,7 @@ const qualifications: Qualification[] = [
   {
     qualType: QualType.btec2,
     subject: 'Engineering',
-    description: '',
-    grade: 'Merit'
+    description: 'Note: Grade is Merit',
+    grade: 'M'
   }
 ];
