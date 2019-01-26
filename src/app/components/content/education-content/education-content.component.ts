@@ -238,7 +238,7 @@ const qualifications: Qualification[] = [
     qualType: QualType.gcse,
     subject: 'ICT',
     description: 'Note: Grade is Distinction.',
-    grade: 'Dist'
+    grade: 'D'
   },
   {
     qualType: QualType.gcse,

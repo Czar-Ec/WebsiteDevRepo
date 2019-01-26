@@ -41,20 +41,50 @@ tr.element-row:not(.expanded-row):active {
   min-width: 10vw;
   border: 2px solid #660000;
   font-weight: lighter;
-  margin: 8px 16px 8px 0;
+  margin: 8px 16px 8px 8px;
   padding: 10px;
   min-height: 5vh;
 }
 
 .grade-letter {
-  font-size: 5vw;
-  padding-bottom: 2vh;
+  font-size: 500%;
+  line-height: 100%;
 }
 
 .grade-percentage {
-  font-size: 2vw;
+  font-size: 200%;
 }
 
 .grade-description {
   padding: 2px;
+}
+
+// mobile
+@media screen and (max-width: 1000px) {
+  .grade-display {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 10vw;
+    border: 2px solid #660000;
+    font-weight: lighter;
+    margin: 8px 12px 8px 0;
+    padding: 10px;
+    min-height: 0.75vh;
+  }
+
+  .grade-letter {
+    font-size: 200%;
+    line-height: 200%;
+  }
+  
+  .grade-percentage {
+    font-size: 100%;
+  }
+  
+  .grade-description {
+    padding: 2px;
+  }
 }
