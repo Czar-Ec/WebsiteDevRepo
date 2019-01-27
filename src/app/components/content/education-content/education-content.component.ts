@@ -36,10 +36,22 @@ export class EducationContentComponent implements OnInit {
   ngOnInit() {
   }
 
+  /**
+   * Filters the table data source via the
+   * chosen qualification type
+   * @param filterVal filter value
+   */
   filter(filterVal: string) {
     this.qualList.filter = filterVal;
   }
 
+  /**
+   * Opens the project in another tab
+   * @param projectUrl project url location
+   */
+  public openProject(projectUrl) {
+    window.open(projectUrl, '_blank');
+  }
 }
 
 const qualifications: Qualification[] = [

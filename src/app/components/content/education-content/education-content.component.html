@@ -31,8 +31,8 @@
                 <p class="description">{{element.description}}</p>
               <div *ngIf="element.project_link && element.project_description && element.project_title">
                 <h5>{{element.project_title}}</h5>
-                <a [href]="element.project_link" target="_blank">{{element.project_link}}</a>
-                <p>{{element.project_description}}</p>
+                <p class="project-description">{{element.project_description}}</p>
+                <button mat-raised-button color="primary" (click)=openProject(element.project_link)>Open Project</button>
               </div></div>
               
 

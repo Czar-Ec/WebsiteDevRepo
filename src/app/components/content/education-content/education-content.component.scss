@@ -42,6 +42,11 @@ tr.element-row:not(.expanded-row):active {
   margin: 0 auto;
 }
 
+button {
+  margin: 20px auto;
+  display: block;
+}
+
 .grade-display {
   display: flex;
   align-items: center;
@@ -85,7 +90,6 @@ tr.element-row:not(.expanded-row):active {
   .grade-display {
     display: flex;
     align-items: center;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     min-width: 70%;
@@ -97,8 +101,8 @@ tr.element-row:not(.expanded-row):active {
   }
 
   .grade-letter {
-    font-size: 200%;
-    line-height: 200%;
+    font-size: 400%;
+    line-height: 100%;
   }
   
   .grade-percentage {
