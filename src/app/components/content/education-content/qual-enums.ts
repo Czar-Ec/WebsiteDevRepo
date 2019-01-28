@@ -18,7 +18,11 @@ export interface Qualification {
   description: string;
   grade: string;
   percentage?: number;
-  project_title?: string;
-  project_link?: string;
-  project_description?: string;
+  projects?: Project[];
+}
+
+interface Project {
+  project_title: string;
+  project_link: string;
+  project_description: string;
 }

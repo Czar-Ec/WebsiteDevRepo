@@ -27,14 +27,15 @@
                   <h3 class="grade-percentage">{{element.percentage}}%</h3>
                 </div>
               </div>
-              <div>
-                <p class="description">{{element.description}}</p>
-              <div *ngIf="element.project_link && element.project_description && element.project_title">
-                <h5>{{element.project_title}}</h5>
-                <p class="project-description">{{element.project_description}}</p>
-                <button mat-raised-button color="primary" (click)=openProject(element.project_link)>Open Project</button>
-              </div></div>
-              
+              <div class="grade-description">
+                <p>{{element.description}}</p>
+                <div *ngFor="let project of element.projects">
+                  <h5>{{project.project_title}}</h5>
+                  <p class="project-description">{{project.project_description}}</p>
+                  <button mat-raised-button color="primary" (click)=openProject(project.project_link)>Open Project</button>
+                </div>
+              </div>
+
 
             </div>
           </td>

@@ -10,6 +10,10 @@ mat-panel-title {
   padding: 0 8px 16px !important;
 }
 
+.mat-header-cell, .mat-cell {
+  text-align: center;
+}
+
 table {
   margin: 0 auto;
   width: 100%;
@@ -37,7 +41,7 @@ tr.element-row:not(.expanded-row):active {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1px;
+  padding: 30px 1px;
   width: 100%;
   margin: 0 auto;
 }
@@ -55,7 +59,7 @@ button {
   min-width: 10vw;
   border: 2px solid #660000;
   font-weight: lighter;
-  margin: 8px 16px 8px 8px;
+  margin: 0 auto;
   padding: 10px;
   min-height: 5vh;
 }
@@ -70,6 +74,8 @@ button {
 }
 
 .grade-description {
+  padding: 0 16px;
+  text-align: center;
 }
 
 // mobile
@@ -85,6 +91,7 @@ button {
     padding: 1px;
     width: 100%;
     margin: 0 auto;
+    text-align: center;
   }
 
   .grade-display {
