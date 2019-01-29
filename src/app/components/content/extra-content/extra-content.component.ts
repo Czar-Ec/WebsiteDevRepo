@@ -7,9 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExtraContentComponent implements OnInit {
 
+  public compLangs = languages;
+
   constructor() { }
 
   ngOnInit() {
   }
 
 }
+
+const languages = [
+  'C',
+  'C++',
+  'Java',
+  'HTML',
+  'CSS',
+  'SQL',
+  'JS',
+  'PHP',
+  'Gherkin',
+  'Jasmine',
+  'Maven',
+  'Rasp Pi',
+  'Spring',
+  'SDL'
+];
