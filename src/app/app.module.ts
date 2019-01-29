@@ -17,6 +17,7 @@ import { ExtraContentComponent } from './components/content/extra-content/extra-
 import { ContactComponent } from './components/content/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,10 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [{
+    provide: APP_BASE_HREF,
+    useValue: './'
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule {
