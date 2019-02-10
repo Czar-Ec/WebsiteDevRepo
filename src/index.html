@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <title>CzarEc Portfolio</title>
@@ -10,25 +9,8 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-
 <body>
-  <script>
-    (function () {
-      // get URL user was trying to access
-      var redirect = sessionStorage.redirect;
-
-      // remove URL from sessionStorage
-      delete sessionStorage.redirect;
-
-      // check if redirect is needed
-      if (redirect && redirect != location.href) {
-        // redirect to the URL
-        history.replaceState(null, null, redirect);
-      }
-    })();
-  </script>
   <app-root></app-root>
 </body>
 <footer></footer>
-
 </html>
